@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444;
+    color: #fff;
+    height: 100%;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-image: url('../img/apple-computer-desk-374857.jpg');
+    background-size: 100% auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 6, 6, 0.8);
+    z-index: -1;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.lg-heading {
+    font-size: 6rem;
+}
+
+h2.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: rgba(4, 4, 4, 0.5);
+    display: inline-block;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    /* this makes sure this is always in front */
+    z-index: 2;
+    width: 100%;
+}
+
+.text-secondary {
+    color: #eece1a;
+}
+
+main {
+    padding: 4rem;
+    height: 100%;
+}
+
+.icons>a {
+    margin-top: 1rem;
+    padding: 0.5rem;
+}
+
+.icons a:hover {
+    padding: 0.7rem;
+    color: #eece1a;
+    transition: all 0.5s ease-out;
+}
+
+.ml-25 {
+    margin-right: 25%;
+}
+
+* #home {
+    overflow: hidden;
+}
+
+#home h1 {
+    margin-top: 20vh;
+}
