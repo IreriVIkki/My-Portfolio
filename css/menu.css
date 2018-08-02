@@ -1,0 +1,41 @@
+.menu-btn {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+    z-index: 3;
+    transition: 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    transition: 0.5s ease-out;
+}
+
+.menu-btn .btn-line:nth-child(2) {
+    margin: 5px 0;
+}
+
+.close {
+    transform: rotate(180deg);
+}
+
+/* line 1 to be rotated */
+
+.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px)
+}
+
+/* line 2 to be removed */
+
+.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+
+/* line 3 to be rotated */
+
+.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
