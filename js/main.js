@@ -20,7 +20,9 @@ function toggleMenu() {
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
         //  loop through nav items adding the classes as requires
-        navItems.forEach(element => element.classList.add('show'));
+        var timeDelay = setTimeout(() => {
+            navItems.forEach(element => element.classList.add('show'));
+        }, 300);
 
         //  reset the menu state
         showMenu = true;
