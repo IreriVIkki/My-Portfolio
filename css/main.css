@@ -10,7 +10,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
     background-image: url('../img/apple-computer-desk-374857.jpg');
-    background-size: 100% auto;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
 }
 
 .overlay {
@@ -83,4 +84,43 @@ main {
 
 #home h1 {
     margin-top: 20vh;
+}
+
+/* media queries */
+
+/* small screens */
+
+@media screen and (max-width: 300px) {
+    main {
+        padding: 0.5rem;
+        font-size: 0.5em;
+    }
+    #home h1 {
+        margin-top: 10vh;
+        font-size: 3rem;
+    }
+}
+
+/* tablets and small laptops */
+
+@media screen and (max-width: 768px) {
+    main {
+        align-items: center;
+        text-align: center;
+    }
+    main .lg-heading {
+        line-height: 1;
+    }
+    .home .sm-heading {
+        display: inline-block;
+    }
+}
+
+/* media for background image */
+
+@media screen and (min-width: 968px) {
+    body {
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+    }
 }
