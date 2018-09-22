@@ -20,8 +20,14 @@ function toggleMenu() {
         menuNav.classList.add('show');
         menuBranding.classList.add('show');
         //  loop through nav items adding the classes as requires
+        navItems.forEach(element => {
+            element.classList.remove('hideItems')
+        });
         var timeDelay = setTimeout(() => {
-            navItems.forEach(element => element.classList.add('show'));
+            navItems.forEach(element => {
+                element.classList.add('show');
+            });
+
         }, 300);
 
         //  reset the menu state
@@ -32,7 +38,10 @@ function toggleMenu() {
         menuNav.classList.remove('show');
         menuBranding.classList.remove('show');
         //  loop through nav items adding the classes as requires
-        navItems.forEach(element => element.classList.remove('show'));
+        navItems.forEach(element => {
+            element.classList.remove('show');
+            element.classList.add('hideItems')
+        });
 
         //  reset the menu state
         showMenu = false;

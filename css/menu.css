@@ -121,17 +121,17 @@
 
 .nav-item:nth-child(2).show {
     transform: translate3d(0, 0, 0px);
-    transition: all 0.7s ease-out;
+    transition: all 0.6s ease-out;
 }
 
 .nav-item:nth-child(3).show {
     transform: translate3d(0, 0, 0px);
-    transition: all 0.9s ease-out;
+    transition: all 0.7s ease-out;
 }
 
 .nav-item:nth-child(4).show {
     transform: translate3d(0, 0, 0px);
-    transition: all 1.1s ease-out;
+    transition: all 0.8s ease-out;
 }
 
 .nav-item.current>a {
@@ -153,6 +153,15 @@
     .menu-nav {
         width: 100%;
         height: 50vh;
+    }
+    .menu-branding {
+        transform: translate3d(0, -100%, 0px);
+    }
+    .menu.show {
+        transform: translate3d(0, 0, 0);
+    }
+    .menu-nav {
+        transform: translate3d(0, 100%, 0px);
     }
 }
 
