@@ -22,7 +22,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vmax;
+    height: 100%;
     background: rgba(6, 6, 6, 0.8);
     z-index: -1;
 }
@@ -43,6 +43,7 @@ h2.sm-heading {
     padding: 0.2rem 1rem;
     background-color: rgba(4, 4, 4, 0.5);
     display: inline-block;
+    border-radius: 4px;
 }
 
 a {
@@ -66,16 +67,7 @@ main {
     height: 100%;
 }
 
-.icons>a {
-    margin-top: 1rem;
-    padding: 0.5rem;
-}
 
-.icons a:hover {
-    padding: 0.7rem;
-    color: #eece1a;
-    transition: all 0.5s ease-out;
-}
 
 .ml-25 {
     margin-right: 25%;
@@ -102,10 +94,12 @@ main {
         padding: 0.5rem;
         font-size: 0.5em;
     }
+
     #home h1 {
         margin-top: 15vh;
         font-size: 3rem;
     }
+
     #home h2 {
         margin-top: 5vh;
     }
@@ -118,9 +112,11 @@ main {
         align-items: center;
         text-align: center;
     }
+
     main .lg-heading {
         line-height: 1;
     }
+
     .home .sm-heading {
         display: inline-block;
     }

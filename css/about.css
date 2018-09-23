@@ -1,3 +1,36 @@
 body {
-    background-color: rgb(26, 26, 26)
+    background-color: rgba(20, 20, 20, 0.85) !important;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.lg-heading {
+    font-size: 6rem;
+}
+
+h2.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background-color: rgba(4, 4, 4, 0.5);
+    display: inline-block;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2rem;
+    height: 100%;
+}
+
+.text-yellow {
+    color: #eece1a;
+}
+
+.info {
+    display: grid;
+    grid-template-areas: 1fr 1fr;
 }
